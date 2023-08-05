@@ -1,0 +1,100 @@
+@import "./variables.scss";
+
+@mixin FlexRow(){
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.main__div {
+    font-family: "Work Sans", sans-serif;
+    width: 250px;
+    background-color: white;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    // height: auto;
+    max-height: 200vh;
+    padding: 20px 0px; /* Set a maximum height for the sidebar */
+    overflow-y: auto; /* Use auto instead of scroll to only show scrollbar if needed */
+    box-shadow:  0px 5px 10px 0px rgba(0, 0, 0, 0.137);
+}
+
+.fixed{
+    position: sticky;
+    top: 100px;
+    left: 0;
+    overflow-y: scroll;
+    
+}
+
+
+.main__div select{
+    background-color: none;
+    border:none;
+    color: #213F7D;
+    font-size: 16px;
+    background-image: url(../../assets/global/drop_down_unshaded.svg);
+    background-repeat: no-repeat;
+    background-position: right 10px center; 
+    padding-right: 30px; 
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+
+section p, .main__div span{
+
+    padding-left: 20px;
+    
+
+}
+
+section h5 {
+
+
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #213F7D;
+        padding-left: 20px;
+    
+    
+}
+
+.main__div span{
+    color: #213F7D;
+    @include FlexRow();
+    gap: 15px;
+}
+
+
+.main__div li{
+    width: 100%;
+    margin: 15px 0px;
+    padding-left: 20px;
+    color: #213F7D;
+    font-size: 16px;
+    padding: 5px 0px 5px 20px;
+    @include FlexRow();
+}
+
+
+.main__div li:hover{
+
+    border-left: 3px solid ;
+    background-color:#39CDCC;
+    
+
+    
+}
+
+.main__div li p{
+    font-size: 16px;
+    color: #213F7D
+}
+

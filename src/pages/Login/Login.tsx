@@ -29,7 +29,7 @@ const Login:React.FC = () => {
 
 
 
-            <form className={Styles.form}>
+            <form className={Styles.form} onSubmit={(e)=>e.preventDefault()}>
                 <input type="email" placeholder='Email' required/>
                 <span className={Styles.password}>
                 <input type={`${showPwd ? "text":"password"}`}  placeholder='Password' required/>

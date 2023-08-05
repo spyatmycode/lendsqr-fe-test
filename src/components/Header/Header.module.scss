@@ -1,0 +1,93 @@
+@import "./variables.scss";
+
+@mixin FlexRow(){
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.main__div{
+    font-family: "Work Sans",sans-serif;
+    width: 100vw;
+    justify-content: space-between;
+    @include FlexRow();
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.04);
+    padding: 15px 40px;
+    top: 0;
+
+}
+
+.left{
+    @include FlexRow();
+    gap: 150px;
+}
+
+
+
+.search__form input{
+    width: 300px;
+    height: 40px;
+    border-right: none;
+    outline: none;
+    border: 1px solid $border;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 2px 10px;
+    color: $inputPlaceholder;
+}
+
+
+.search__form button{
+    height: 40px;
+    width: 50px;
+    border-left: none;
+    border: none;
+    background-color: $green;
+    color: white;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 1px;
+    position: relative;
+    top: 0.5px;
+    cursor: pointer;
+}
+
+.right{
+    @include FlexRow();
+    gap: 40px;
+
+    color: $profileText;
+
+    cursor: pointer;
+
+
+    
+
+    & p{
+        text-decoration: underline;
+        // color:$profileText;
+
+    }
+
+    & .profile__div{
+
+        @include FlexRow();
+        gap: 10px;
+
+        & select{
+            border: none;
+        }
+
+    }
+    
+}
+
+.profile__div select{
+    
+    background-image: url(../../assets/global/drop_down_shaded.svg);
+    background-repeat: no-repeat;
+    appearance: none;
+    width: 70px;
+    background-position: right 0px;
+}
