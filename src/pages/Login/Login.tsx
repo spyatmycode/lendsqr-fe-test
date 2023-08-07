@@ -2,9 +2,16 @@ import React, { useState } from 'react'
 import MainIllustration from '../../assets/login/pablo-sign-in 1.svg'
 import Logo from '../../assets/global/logo.svg'
 import Styles from './Login.module.scss'
+import { useNavigate } from 'react-router-dom'
+
+
+//TODO:Work on the responsiveness of the inputs
+
+
 
 const Login:React.FC = () => {
     const [showPwd, setShowPwd] = useState<boolean>(false)
+    const navigate = useNavigate()
   return (
     <div className={Styles.login__parent}>
 
@@ -22,6 +29,11 @@ const Login:React.FC = () => {
 
         <section className={Styles.right__child}>
 
+        <span className={Styles.logo}>
+                <img src={Logo} alt="company_logo" className={Styles.mobile__logo}  />
+            </span>
+
+
             <div className={Styles.welcome__div}>
                 <p>Welcome!</p>
                 <p>Enter details to login.</p>
@@ -29,7 +41,7 @@ const Login:React.FC = () => {
 
 
 
-            <form className={Styles.form} onSubmit={(e)=>e.preventDefault()}>
+            <form className={Styles.form} onSubmit={(e)=>{e.preventDefault(); navigate("/dashboard")}}>
                 <input type="email" placeholder='Email' required/>
                 <span className={Styles.password}>
                 <input type={`${showPwd ? "text":"password"}`}  placeholder='Password' required/>

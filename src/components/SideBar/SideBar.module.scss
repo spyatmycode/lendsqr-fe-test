@@ -1,5 +1,6 @@
-@import "./variables.scss";
 
+
+@import "./variables.scss";
 @mixin FlexRow(){
     display: flex;
     align-items: center;
@@ -7,32 +8,99 @@
     
 }
 
-.main__div {
-    font-family: "Work Sans", sans-serif;
-    width: 250px;
-    background-color: white;
+.shared{
     display: flex;
+    align-items: flex-start;
+    width: 100vw;
+
     position: relative;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    // height: auto;
-    max-height: 200vh;
-    padding: 20px 0px; /* Set a maximum height for the sidebar */
-    overflow-y: auto; /* Use auto instead of scroll to only show scrollbar if needed */
-    box-shadow:  0px 5px 10px 0px rgba(0, 0, 0, 0.137);
+    top: 10vh;
+
+    overflow-x: auto;
+
+    
 }
 
-.fixed{
-    position: sticky;
-    top: 100px;
-    left: 0;
-    overflow-y: scroll;
+.main__content{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    width: 283px !important;
+    padding: 40px;
+    position: fixed;
+    overflow-y: auto;
+    top: 10vh;
+    bottom: 0;
+    font-family: "Work Sans", sans-serif;
+
+     background-color: white;
+  display: flex;
+    flex-direction: column;
+  gap: 30px;
+       padding: 20px 0px; 
+    box-shadow:  0px 5px 20px 0px rgba(0, 0, 0, 0.04); 
+}
+
+
+
+.main__content section ul a.active__link li{
+
+    background-color: rgba(57, 205, 204, 0.06);
+    border-left: 3px solid  rgba(57, 205, 204, 1);
+    
+     }
+
+
+
+.outlet{
+    position: relative;
+    left: 283px;
+    width: calc(100vw - 283px);
+    background-color:  #FBFBFB;
+}
+
+
+@media screen and (max-width:1500px){
+
+    .main__content{
+        display: none;
+    }
+
+    .outlet{
+        left: 0;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+.shared{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+
+    position: relative;
+    top: 10vh;
+
+
     
 }
 
 
-.main__div select{
+    
+}
+
+
+
+
+
+
+
+
+.main__content select{
     background-color: none;
     border:none;
     color: #213F7D;
@@ -47,7 +115,7 @@
 }
 
 
-section p, .main__div span{
+.main__content section p, .main__content span{
 
     padding-left: 20px;
     
@@ -66,35 +134,63 @@ section h5 {
     
 }
 
-.main__div span{
+.main__content span{
     color: #213F7D;
     @include FlexRow();
-    gap: 15px;
+    gap: 30px;
 }
 
 
-.main__div li{
+
+.main__content section ul li{
     width: 100%;
-    margin: 15px 0px;
+    margin: 30px 0px;
     padding-left: 20px;
-    color: #213F7D;
+    color: #545F7D;
     font-size: 16px;
     padding: 5px 0px 5px 20px;
     @include FlexRow();
+
+ 
 }
 
 
-.main__div li:hover{
 
-    border-left: 3px solid ;
-    background-color:#39CDCC;
+
+.active li{
+
+    border-left: 3px solid !important;
+    background-color:rgba(57, 205, 204, 0.06) !important;
+    
     
 
     
 }
 
-.main__div li p{
+.main__content li p{
     font-size: 16px;
-    color: #213F7D
+    color: #545F7D;
 }
 
+
+
+
+/* 
+.sidebar__container{
+    position: fixed;
+    width: 150px;
+    overflow-y: scroll;
+    top: 20vh;
+    bottom: 0
+
+}
+
+.outlet{
+
+ 
+    position: relative;
+    width: calc(100vw - 150px);
+    height: 100%;
+    background-color:#FBFBFB;
+    overflow-y: auto;
+} */
