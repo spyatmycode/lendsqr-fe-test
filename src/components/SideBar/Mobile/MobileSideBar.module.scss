@@ -81,7 +81,7 @@
 
     transform: translateX(0%);
     transition: 0.5s ease-in-out;
-    overflow: hidden;
+    overflow: auto;
 
 }
 
@@ -107,9 +107,6 @@
     border:none;
     color: #213F7D;
     font-size: 12px;
-   /*  background-image: url(../../../assets/global/drop_down_unshaded.svg);
-    background-repeat: no-repeat;
-    background-position: right 10px center;  */
     padding-right:0px; 
     appearance: none;
     -webkit-appearance: none;

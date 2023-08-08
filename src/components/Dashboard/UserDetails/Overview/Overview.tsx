@@ -14,7 +14,7 @@ const Overview = () => {
 
     const user:Response = data?.find((thisUser:Response)=> thisUser.id === id)
 
-    console.log(user);
+
     
     return (
         <div className={Styles.parent}>

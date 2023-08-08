@@ -18,7 +18,8 @@ import home from '../../assets/sidebar/home 1.svg'
 import coins from '../../assets/sidebar/coins-solid 1.svg'
 import phone from '../../assets/sidebar/phone.svg'
 import barchart from '../../assets/sidebar/chart-bar 2.svg'
+import logout from '../../assets/dashboard/sign-out 1.svg'
 
 
-export { briefcase, badgepercent, handholding, handshake, galaxy, piggybank, clipboard, usertimes, userfriends, usercheck, users, usersetting, sliders, scroll, sack, npbank, home, coins, phone, barchart }
+export { briefcase, badgepercent, handholding, handshake, galaxy, piggybank, clipboard, usertimes, userfriends, usercheck, users, usersetting, sliders, scroll, sack, npbank, home, coins, phone, barchart,logout }
 

@@ -72,6 +72,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: #FBFBFB;
     }
 
 
@@ -81,7 +82,7 @@
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-
+    background-color: #FBFBFB;
     position: relative;
     top: 10vh;
 
@@ -175,22 +176,3 @@ section h5 {
 
 
 
-/* 
-.sidebar__container{
-    position: fixed;
-    width: 150px;
-    overflow-y: scroll;
-    top: 20vh;
-    bottom: 0
-
-}
-
-.outlet{
-
- 
-    position: relative;
-    width: calc(100vw - 150px);
-    height: 100%;
-    background-color:#FBFBFB;
-    overflow-y: auto;
-} */

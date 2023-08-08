@@ -5,6 +5,7 @@ import SideBar from './components/SideBar/SideBar'
 import DataProvider from './contexts/DataProvider'
 import { createBrowserRouter, Route, RouterProvider, Outlet, createRoutesFromElements } from 'react-router-dom'
 import UserDetails from './pages/Dashboard/UserDetails/UserDetails'
+import NotFound from './pages/404/404'
 
 const RootLayout: React.FC = () => {
   return (
@@ -26,6 +27,8 @@ const App = () => {
       <Route element={<RootLayout />} path='/'>
 
         <Route path="/login" element={<Login />} index />
+
+        <Route path='*' element={<NotFound />} />
 
         <Route path={"/" || "/dashboard"} element={<SideBar />}>
 

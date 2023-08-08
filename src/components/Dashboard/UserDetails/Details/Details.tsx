@@ -7,27 +7,7 @@ import { useParams } from 'react-router-dom'
 
 const Details:React.FC = () => {
 
-   /*  {
-        id: string;
-        organization: string;
-        username: string;
-        email: string;
-        phonenumber: string;
-        datejoined: string;
-        status: string;
-        balance: string;
-        user_tier: string;
-        balance_formatted: string;
-        phone_number: string;
-        BVN: number;
-        gender: string;
-        marital_status: string;
-        children: number;
-        residential_type: string;
-        education: Education;
-        socials: Socials;
-        guarantor: Guarantor;
-      }; */
+ 
       const {id} = useParams()
 
     const {data} = useContext(DataContext)

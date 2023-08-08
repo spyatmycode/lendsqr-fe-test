@@ -2,6 +2,11 @@
     display: flex;
     justify-content: space-between;
     color: #545F7D;
+    width: 100%;
+    margin-bottom: 20px;
+    
+    
+
 }
 
 .pagination__select_div {
@@ -38,9 +43,13 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    
+    overflow-x: auto;
+
+
 }
 
-.pagination__buttons span button{
+.pagination__buttons  .chevron{
 
     height: 30px;
     border: none;
@@ -51,6 +60,183 @@
     color: rgba(33, 63, 125, 1);
     padding:0px 5px; 
     font-weight: 500;
+    cursor: pointer;
+
+    
+
+
+}
+
+.list__button{
+    background-color: white !important;
+    border: none;
+    cursor: pointer;
+    color: rgba(33, 63, 125, 1);;
+}
+
+.active{
+    color: dodgerblue !important;
+    background-color: white !important;
+    border: none;
+}
+
+
+
+
+
+  /* MEDIA QUERIES */
+
+
+
+  @media  screen and (min-width: 100px) and (max-width: 500px) {
+
+    .list__button{
+        background-color: white !important;
+        border: none;
+        cursor: pointer;
+    }
+
+    .pagination__container {
+        display: flex;
+        justify-content: space-between;
+        color: #545F7D;
+        width: 100%;
+        
+        
+    
+    }
+    
+    .pagination__select_div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #545F7D;
+        font-family: Work Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    .pagination__select_div select {
+        width: 60px;
+        height: 30px;
+        flex-shrink: 0;
+        border-radius: 4px;
+        padding: 1px 2px;
+        background-color: rgba(33, 63, 125, 0.1);
+        color: rgba(33, 63, 125, 1);
+        background-image: url(../../../assets/global/drop_down_unshaded.svg);
+        background-repeat: no-repeat;
+        background-position: right 10px center; 
+        padding:0px 10px; 
+        appearance: none;
+        font-weight: 500;
+        font-size: 10px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    
+    .pagination__buttons span{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        
+        overflow-x: auto;
+    }
+    
+    .pagination__buttons span button{
+    
+        height: 30px;
+        border: none;
+        flex-shrink: 0;
+        border-radius: 4px;
+        padding: 1px 2px;
+        background-color: rgba(33, 63, 125, 0.1);
+        color: rgba(33, 63, 125, 1);
+        padding:0px 5px; 
+        font-weight: 500;
+        font-size: 10px;
+    
+    
+    }
+    
+      
+      .pagination__buttons{
+        width: 100px;
+        overflow: hidden;
+      }
+    
+
+    
+  }
+@media (min-width:1000px){
+
+   
+   
+    
+
+    .pagination__container {
+        display: flex;
+        justify-content: space-between;
+        color: #545F7D;
+        flex-direction: row;
+    
+    }
+    
+    .pagination__select_div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #545F7D;
+        font-family: Work Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    .pagination__select_div select {
+        width: 80px;
+        height: 30px;
+        flex-shrink: 0;
+        border-radius: 4px;
+        padding: 1px 2px;
+        background-color: rgba(33, 63, 125, 0.1);
+        color: rgba(33, 63, 125, 1);
+        background-image: url(../../../assets/global/drop_down_unshaded.svg);
+        background-repeat: no-repeat;
+        background-position: right 10px center; 
+        padding:0px 10px; 
+        appearance: none;
+        font-weight: 500;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    
+    .pagination__buttons span{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        
+    }
+    
+    .pagination__buttons span button{
+    
+        height: 30px;
+        border: none;
+        flex-shrink: 0;
+        border-radius: 4px;
+        padding: 1px 2px;
+        background-color: rgba(33, 63, 125, 0.1);
+        color: rgba(33, 63, 125, 1);
+        padding:0px 5px; 
+        font-weight: 500;
+    
+    
+    }
+
 
 
 }

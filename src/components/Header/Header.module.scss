@@ -41,9 +41,10 @@
 .left .toggle{
     @include FlexRow();
     color:#213F7D;
+    display: block;
 }
 
-.left span{
+.left .toggle__parent {
     @include FlexRow();
     justify-content: center;
     gap:10px;
@@ -135,6 +136,13 @@
 
 
 @media (min-width:1500px) {
+
+    .left .toggle{
+        @include FlexRow();
+        color:#213F7D;
+        display: none;
+    }
+    
 
 
     .search__form{

@@ -2,10 +2,7 @@
     display: flex;
     max-width: 270px;
     flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
     gap: 30px;
-    // width: 270px;
     min-height: 600px;
     padding: 20px;
     flex-shrink: 0;
@@ -15,8 +12,7 @@
     box-shadow: 3px 5px 20px 0px rgba(0, 0, 0, 0.04);
     position: absolute;
     z-index: 200;
-    /*  */
-    // align-items: center;
+
 }
 
 .main__container span {
@@ -46,7 +42,7 @@
     flex-shrink: 0;
     border-radius: 8px;
     border: 1px solid #213F7D;
-    opacity: 0.2;
+    opacity: 0.5;
     background: #FFF;
     padding: 0px 30px;
 }

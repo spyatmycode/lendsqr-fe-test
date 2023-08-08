@@ -1,17 +1,16 @@
 import React from 'react'
 import Styles from './MobileSideBar.module.scss'
-import { briefcase, badgepercent, handholding, handshake, galaxy, piggybank, clipboard, usertimes, userfriends, usercheck, users, usersetting, sliders, scroll, sack, npbank, home, coins, phone, barchart } from '../Assets'
+import { briefcase, badgepercent, handholding, handshake, galaxy, piggybank, clipboard, usertimes, userfriends, usercheck, users, usersetting, sliders, scroll, sack, npbank, home, coins, phone, barchart,logout } from '../Assets'
 import { FaSearch } from 'react-icons/fa'
-import { Outlet, NavLink } from 'react-router-dom'
+import {  NavLink } from 'react-router-dom'
 
-//TODO: Work on the making the side bar sticky and scrollable
 
 interface Props{
     isOpen:boolean;
     setIsOpen:React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const SideBar: React.FC<Props> = ({isOpen,setIsOpen}) => {
+const SideBar: React.FC<Props> = ({isOpen}) => {
     return (
         <>
 
@@ -19,7 +18,7 @@ const SideBar: React.FC<Props> = ({isOpen,setIsOpen}) => {
             <div className={`${Styles.main__content} ${isOpen?Styles.isOpen:""}`}>
 
                 <div>
-                    <form className={Styles.search__form}>
+                    <form className={Styles.search__form} onSubmit={(e:any)=>e.preventDefault()}>
                         <span>
                             <input type="text" />
                             <button><FaSearch size={"10px"}/></button>
@@ -86,10 +85,17 @@ const SideBar: React.FC<Props> = ({isOpen,setIsOpen}) => {
 
                     </ul>
                 </section>
+                <section>
+                    
+                    <ul>
+                       <NavLink to={"/login"}><li><img src={logout} alt="Log out"/><p>Log Out</p></li></NavLink>
+                        <li>v1.2.0</li>
+                        
+
+
+                    </ul>
+                </section>
             </div>
-
-
-
 
 
 

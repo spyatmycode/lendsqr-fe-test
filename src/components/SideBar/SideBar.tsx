@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import Styles from './SideBar.module.scss'
-import { briefcase, badgepercent, handholding, handshake, galaxy, piggybank, clipboard, usertimes, userfriends, usercheck, users, usersetting, sliders, scroll, sack, npbank, home, coins, phone, barchart } from './Assets'
+import { briefcase, badgepercent, handholding, handshake, galaxy, piggybank, clipboard, usertimes, userfriends, usercheck, users, usersetting, sliders, scroll, sack, npbank, home, coins, phone, barchart,logout } from './Assets'
 import Header from '../Header/Header'
 import { Outlet, NavLink } from 'react-router-dom'
 import MobileSideBar from './Mobile/MobileSideBar'
 
 
-//TODO: Work on the making the side bar sticky and scrollable
+
+
 
 const SideBar: React.FC = () => {
 
@@ -83,6 +84,18 @@ const SideBar: React.FC = () => {
 
             </ul>
           </section>
+
+             <section>
+                    
+             <ul>
+                       <NavLink to={"/login"}><li><img src={logout} alt='Log out'/><p>Log Out</p></li></NavLink>
+                        <li>v1.2.0</li>
+                        
+
+
+                    </ul>
+                </section>
+           
         </div>
 
 

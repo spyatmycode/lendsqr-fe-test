@@ -15,36 +15,35 @@ const DataProvider: React.FC<DataContextProps> = ({ children }) => {
   const storedData = localStorage.getItem('lendsqr_test_data_akeju');
   const parsedData = storedData ? JSON.parse(storedData) : null;
   
+  
 
-    const [data,setData] = useState<null | string[] | Response[] | any>(parsedData? parsedData: null)
+    const [data,setData] = useState<null |  Response[] >(parsedData ? parsedData: null)
     const [uniqueOrganizations, setUniqueOrganizations] =useState<null | string[]>([])
+    const [error, setError] = useState<boolean>(false)
     useEffect(()=>{
-        fetchData().then((data)=>{
+        fetchData(setError).then((data)=>{
 
           
 
           const storedData = localStorage.getItem('lendsqr_test_data_akeju');
           const parsedData = storedData ? JSON.parse(storedData) : null;
+          parsedData && setError(false)
           
           if (parsedData !== null) {
-            setData(parsedData);
+            setData(data);
+            setUniqueOrganizations(getUniqueOrganizations(parsedData))
           }
             
 
 
         }).catch((err)=>console.log(err)
         )
-    },[data])
+    },[])
 
-   
 
-    console.log(uniqueOrganizations);
-    
-
-    
     
     return (
-      <DataContext.Provider value={{data,setData, uniqueOrganizations}}>
+      <DataContext.Provider value={{data,setData,error, setError ,uniqueOrganizations}}>
         {children}
       </DataContext.Provider>
     );

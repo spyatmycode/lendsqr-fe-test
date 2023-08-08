@@ -5,7 +5,6 @@ import Styles from './Login.module.scss'
 import { useNavigate } from 'react-router-dom'
 
 
-//TODO:Work on the responsiveness of the inputs
 
 
 

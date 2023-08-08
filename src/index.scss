@@ -5,11 +5,12 @@
     text-decoration: none !important;
 }
 
-/* body{
-    overflow-y: scroll;
+html{
+    background-color: #fbfbfb;
 }
- */
-a:visited,a{
+
+a:visited, a:visited p, a:focus{
     text-decoration: none !important;
+    color:none;
 }
 
