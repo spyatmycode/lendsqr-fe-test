@@ -88,7 +88,7 @@ const SideBar: React.FC = () => {
              <section>
                     
              <ul>
-                       <NavLink to={"/login"}><li><img src={logout} alt='Log out'/><p>Log Out</p></li></NavLink>
+                       <NavLink to={"/"}><li><img src={logout} alt='Log out'/><p>Log Out</p></li></NavLink>
                         <li>v1.2.0</li>
                         
 

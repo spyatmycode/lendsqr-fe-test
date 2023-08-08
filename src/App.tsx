@@ -26,11 +26,11 @@ const App = () => {
     createRoutesFromElements(
       <Route element={<RootLayout />} path='/'>
 
-        <Route path="/login"  element={<Login />} index />
+        <Route path={"/" }  element={<Login />} index />
 
         <Route path='*' element={<NotFound />} />
 
-        <Route path={"/" || "/dashboard"} element={<SideBar />}>
+        <Route path={"/dashboard" || "/dashboard"} element={<SideBar />}>
 
           <Route path='/dashboard' element={<Dashboard />} />
 
