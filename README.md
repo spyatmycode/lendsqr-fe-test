@@ -12,19 +12,19 @@ Get a glimpse of Lendsqr through these captivating screenshots:
 
 - Screenshot 1
 
-![Login Page]([https://via.placeholder.com/468x300?text=App+Screenshot+Here](https://github.com/spyatmycode/lendsqr-fe-test/blob/master/src/assets/screenshots/Login.png))
+![Login Page](https://github.com/spyatmycode/lendsqr-fe-test/blob/master/src/assets/screenshots/Login.png)
 
 
 - Screenshot 2
 
 
-![Dashboard](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Dashboard](https://github.com/spyatmycode/lendsqr-fe-test/blob/master/src/assets/screenshots/dashboard.png)
 
 
 - Screenshot 3
 
 
-![User Details](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![User Details](https://github.com/spyatmycode/lendsqr-fe-test/blob/master/src/assets/screenshots/details.png)
 
 
 ## Advanced Technologies
