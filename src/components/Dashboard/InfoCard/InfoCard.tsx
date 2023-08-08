@@ -12,7 +12,7 @@ interface Props{
 
 const InfoCard:React.FC<Props> = ({icon, title,value}) => {
   return (
-    <div className={Styles.card}>
+    <div className={Styles.card} id="info-card">
         <span><img src={icon || test} alt="Icon" /></span>
         <span>{title || "Users"}</span>
         <span>{  value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") || "2,345"}</span>
