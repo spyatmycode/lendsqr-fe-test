@@ -26,7 +26,7 @@ const App = () => {
     createRoutesFromElements(
       <Route element={<RootLayout />} path='/'>
 
-        <Route path="/login" element={<Login />} index />
+        <Route path="/login"  element={<Login />} index />
 
         <Route path='*' element={<NotFound />} />
 

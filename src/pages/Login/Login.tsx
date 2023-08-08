@@ -21,7 +21,7 @@ const Login:React.FC = () => {
             </span>
 
             <span className={Styles.illustration}>
-                <img src={MainIllustration} alt="main_illustration" width={"700px"} />
+                <img src={MainIllustration} alt="main_illustration" width={"600px"} />
             </span>
 
         </section>

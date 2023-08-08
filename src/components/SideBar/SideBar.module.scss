@@ -60,7 +60,74 @@
 }
 
 
-@media screen and (max-width:1500px){
+@media (min-width: 1024px) and (max-width: 1500px){
+
+
+
+@import "./variables.scss";
+@mixin FlexRow(){
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.shared{
+    display: flex;
+    align-items: flex-start;
+    width: 100vw;
+
+    position: relative;
+    top: 10vh;
+
+    overflow-x: auto;
+
+    
+}
+
+.main__content{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    width: 283px !important;
+    padding: 40px;
+    position: fixed;
+    overflow-y: auto;
+    top: 10vh;
+    bottom: 0;
+    font-family: "Work Sans", sans-serif;
+
+     background-color: white;
+  display: flex;
+    flex-direction: column;
+  gap: 30px;
+       padding: 20px 0px; 
+    box-shadow:  0px 5px 20px 0px rgba(0, 0, 0, 0.04); 
+}
+
+
+
+.main__content section ul a.active__link li{
+
+    background-color: rgba(57, 205, 204, 0.06);
+    border-left: 3px solid  rgba(57, 205, 204, 1);
+    
+     }
+
+
+
+.outlet{
+    position: relative;
+    left: 283px;
+    width: calc(100vw - 283px);
+    background-color:  #FBFBFB;
+}
+
+
+}
+
+
+@media screen and (max-width:900px){
 
     .main__content{
         display: none;
@@ -172,7 +239,6 @@ section h5 {
     font-size: 16px;
     color: #545F7D;
 }
-
 
 
 
