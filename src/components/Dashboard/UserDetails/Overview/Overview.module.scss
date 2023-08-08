@@ -57,7 +57,7 @@
     flex-direction: column;
     align-items: flex-start;
     color: #213F7D;
-    font-family:"Work Sans",sans-serif;
+    font-family: Work Sans;
     font-size: 22px;
     font-style: normal;
     font-weight: 500;
@@ -65,7 +65,7 @@
 
     span:nth-child(2) {
         color: #545F7D;
-        font-family:"Work Sans",sans-serif;
+        font-family: Work Sans;
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
@@ -92,7 +92,7 @@
 
     :nth-child(1) {
         color: #545F7D;
-        font-family:"Work Sans",sans-serif;
+        font-family: Work Sans;
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
@@ -111,7 +111,7 @@
     
     & .account__balance {
         color: #213F7D;
-        font-family:"Work Sans",sans-serif;
+        font-family: Work Sans;
         font-size: 22px;
         font-style: normal;
         font-weight: 500;
@@ -121,7 +121,7 @@
     & .bank__details span {
        
         color: #213F7D;
-        font-family:"Work Sans",sans-serif;
+        font-family: Work Sans;
         font-size: 12px;
         font-style: normal;
         font-weight: 400;
@@ -148,7 +148,7 @@
 
 .navigation ul li {
     padding: 10px;
-    // min-width: 150px;
+    min-width: 150px;
     width: 100%;
     text-align: center;
     color: rgba(0, 0, 0, 0.80);
@@ -165,7 +165,7 @@
 
 
 
-@media (min-width: 1500px) {
+@media (min-width: 600px) {
 
     .parent {
         height: 240px;
@@ -225,7 +225,7 @@
         flex-direction: column;
         align-items: flex-start;
         color: #213F7D;
-        font-family:"Work Sans",sans-serif;
+        font-family: Work Sans;
         font-size: 22px;
         font-style: normal;
         font-weight: 500;
@@ -233,7 +233,7 @@
     
         span:nth-child(2) {
             color: #545F7D;
-            font-family:"Work Sans",sans-serif;
+            font-family: Work Sans;
             font-size: 14px;
             font-style: normal;
             font-weight: 400;
@@ -261,7 +261,7 @@
     
         :nth-child(1) {
             color: #545F7D;
-            font-family:"Work Sans",sans-serif;
+            font-family: Work Sans;
             font-size: 14px;
             font-style: normal;
             font-weight: 500;
@@ -280,7 +280,7 @@
         
         & .account__balance {
             color: #213F7D;
-            font-family:"Work Sans",sans-serif;
+            font-family: Work Sans;
             font-size: 22px;
             font-style: normal;
             font-weight: 500;
@@ -290,7 +290,7 @@
         & .bank__details span {
            
             color: #213F7D;
-            font-family:"Work Sans",sans-serif;
+            font-family: Work Sans;
             font-size: 12px;
             font-style: normal;
             font-weight: 400;
@@ -316,7 +316,7 @@
     
     .navigation ul li {
         padding: 10px;
-        min-width: 150px;
+        min-width: 100px;
         text-align: center;
         color: rgba(0, 0, 0, 0.80);
         font-size: 16px;
