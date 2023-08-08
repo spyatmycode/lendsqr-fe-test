@@ -12,7 +12,7 @@ Get a glimpse of Lendsqr through these captivating screenshots:
 
 - Screenshot 1
 
-![Login Page](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Login Page]([https://via.placeholder.com/468x300?text=App+Screenshot+Here](https://github.com/spyatmycode/lendsqr-fe-test/blob/master/src/assets/screenshots/Login.png))
 
 
 - Screenshot 2
