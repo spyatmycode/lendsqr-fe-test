@@ -1,9 +1,11 @@
 .pagination__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     color: #545F7D;
-    width: 100%;
+    width: calc(100% - 283px);
     margin-bottom: 20px;
+    align-items: center;
+    gap: 10px;
     
     
 
