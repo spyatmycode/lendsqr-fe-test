@@ -393,7 +393,7 @@ const Details:React.FC = () => {
                         <span className={Styles.information}>
                             <p className={Styles.information__title}>
 
-                               Email Address
+                                Relationship 
 
 
                             </p>
