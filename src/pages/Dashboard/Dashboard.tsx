@@ -19,7 +19,7 @@ const Dashboard = () => {
   return (
    <div className={Styles.parent}>
      <div className={Styles.main__content}>
-        <header>
+        <header className={Styles.header}>
          <h2>Users</h2>
         </header>
 

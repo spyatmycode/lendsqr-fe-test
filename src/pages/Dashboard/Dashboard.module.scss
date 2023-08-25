@@ -8,6 +8,15 @@
 
 }
 
+.header{
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+    width: calc(100% - 160px);
+    padding: 20px 0px;
+
+}
+
 .main__content {
     font-family: "Work Sans", sans-serif;
     padding: 10px 80px;
@@ -61,7 +70,7 @@
 .infocard__container{
 
     
-    gap: 34px;
+    gap: 40px;
     display: flex;
     flex-direction: row;
     justify-content: center;
