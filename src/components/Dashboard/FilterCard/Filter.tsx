@@ -99,7 +99,7 @@ const Filter: React.FC<FilterProps> = ({ selectedFilter, setSelectedFilter, setS
             <span>
                 <p>Organization</p>
                 <select name="organization" id="" required onChange={handleFilterChange} value={filterObject.organization}>
-                <option value=''>Select Organization</option>
+                <option value=''>Select</option>
 
                     {
                         uniqueOrganizations?.map((item:string)=>{
@@ -137,7 +137,7 @@ const Filter: React.FC<FilterProps> = ({ selectedFilter, setSelectedFilter, setS
 
 
 
-                    <option value="Active">Select Status</option>
+                    <option value="Active">Select</option>
                     <option value="Active">Active</option>
                     <option value="Inactive">Inactive</option>
                     <option value="Blaclisted">Blacklisted</option>

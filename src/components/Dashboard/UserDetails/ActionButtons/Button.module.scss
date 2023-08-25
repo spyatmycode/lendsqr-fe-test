@@ -18,14 +18,14 @@
 
 .red {
     @include Button();
-    border: 1px solid #E4033B;
+    border: 2px solid #E4033B;
     color: #E4033B;
 
 }
 
 .green {
     @include Button();
-    border: 1px solid #39CDCC;
+    border: 2px solid #39CDCC;
     color: #39CDCC;
 
 }
@@ -33,7 +33,7 @@
 @media  (min-width: 200px) {
 
     @mixin Button() {
-        width: 120px;
+        width: 170px;
         height: 40px;
         flex-shrink: 0;
         border-radius: 8px;
@@ -52,14 +52,14 @@
     
     .red {
         @include Button();
-        border: 1px solid #E4033B;
+        border: 2px solid #E4033B;
         color: #E4033B;
     
     }
     
     .green {
         @include Button();
-        border: 1px solid #39CDCC;
+        border: 2px solid #39CDCC;
         color: #39CDCC;
     
     }

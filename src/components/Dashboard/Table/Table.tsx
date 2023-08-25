@@ -141,7 +141,7 @@ const Table: React.FC<Props> = ({ passedData, setPassedData, }) => {
                                         </td>
                                         <td className={Styles.table__cell}>
                                             <span className={Styles.actions} id='action__card'>
-                                                <img src={src} alt="" width={"70px"} height={"30px"} id='action__card' />
+                                                <img src={src} alt="" width={"70px"} height={"28px"} id='action__card' />
                                                 <img src={more_icon} alt="" onClick={() => { setSelectedAction(id); setShowAction(true) }} />
                                                 <Actions actionName={""} selectedAction={selectedAction} id={id} showAction={showAction} setShowAction={setShowAction} setSelectedAction={setSelectedFilter}
 

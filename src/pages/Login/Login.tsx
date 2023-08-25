@@ -21,7 +21,7 @@ const Login:React.FC = () => {
             </span>
 
             <span className={Styles.illustration}>
-                <img src={MainIllustration} alt="main_illustration" width={"600px"} />
+                <img src={MainIllustration} alt="main_illustration" width={"750px"} />
             </span>
 
         </section>
@@ -48,7 +48,7 @@ const Login:React.FC = () => {
                     SHOW
                 </span>
                 </span>
-                <p>FORGOT PASSWORD ?</p>
+                <p>FORGOT PASSWORD?</p>
                 <button type="submit" className={Styles.submit__button}>LOG IN</button>
                
             </form>

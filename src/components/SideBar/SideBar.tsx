@@ -85,7 +85,7 @@ const SideBar: React.FC = () => {
             </ul>
           </section>
 
-             <section>
+             <section className={Styles.last_section}>
                     
              <ul>
                        <NavLink to={"/"}><li><img src={logout} alt='Log out'/><p>Log Out</p></li></NavLink>
