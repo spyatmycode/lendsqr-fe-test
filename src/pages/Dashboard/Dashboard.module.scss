@@ -67,7 +67,7 @@
 }
 
 
-@media  (min-width:1024px) and (max-width:1500px){
+@media  (min-width:1200px) and (max-width:1500px){
 
 
 .infocard__container{
@@ -75,7 +75,7 @@
     
     gap: 40px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     
 
