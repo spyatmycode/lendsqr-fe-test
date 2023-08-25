@@ -115,11 +115,11 @@ const Filter: React.FC<FilterProps> = ({ selectedFilter, setSelectedFilter, setS
             </span>
             <span>
                 <p>Username</p>
-                <input type="text" required  name='username'  onChange={handleFilterChange} value={filterObject.username} />
+                <input type="text" required  name='username' placeholder='User'  onChange={handleFilterChange} value={filterObject.username} />
             </span>
             <span>
                 <p>Email</p>
-                <input type="email" name='email' required  onChange={handleFilterChange} value={filterObject.email}/>
+                <input type="email" name='email' required  placeholder='Email' onChange={handleFilterChange} value={filterObject.email}/>
             </span>
             <span>
                 <p>Date</p>
@@ -127,7 +127,7 @@ const Filter: React.FC<FilterProps> = ({ selectedFilter, setSelectedFilter, setS
             </span>
             <span>
                 <p>Phone Number</p>
-                <input type="text"   name='phone_number'  onChange={handleFilterChange} value={filterObject.phone_number} />
+                <input type="text" placeholder='Phone Number'   name='phone_number'  onChange={handleFilterChange} value={filterObject.phone_number} />
 
 
             </span>

@@ -28,7 +28,7 @@ const Header: React.FC<Props> = ({ isOpen, setIsOpen }) => {
 
                 <form className={Styles.search__form} onSubmit={(e: any) => e.preventDefault()}>
                     <span>
-                        <input type="text" />
+                        <input type="text" placeholder='Search for anything' />
                         <button><FaSearch /></button>
                     </span>
                 </form>

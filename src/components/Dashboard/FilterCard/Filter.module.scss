@@ -54,10 +54,12 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
+    
 
 
     & button {
         cursor: pointer;
+        font-weight: 550;
     }
 
     :nth-child(1) {
@@ -67,6 +69,7 @@
         border-radius: 8px;
         border: 1px solid #545F7D;
         color: rgba(84, 95, 125, 1);
+        background-color: white;
     }
 
     :nth-child(2) {
