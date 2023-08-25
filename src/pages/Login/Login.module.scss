@@ -57,6 +57,7 @@
     height:100vh;
     @include Flex("column");
     justify-content: center;
+    background-color: white;
 
 }
 
@@ -85,12 +86,17 @@
        
 }
 
+.form input::placeholder{
+    color: rgba(84, 95, 125, 1);
+    font-family: $avenir-next;
+}
+
 
 .form p{
     color: $green;
     font-size: 12px;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 550;
 }
 
 .form .submit__button{
@@ -101,6 +107,7 @@
     color: white;
     background-color: $green;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .password{
@@ -117,6 +124,7 @@
         font-size: 12px;
         color: $green;
         cursor: pointer;
+        font-weight: 600;
     }
 }
 

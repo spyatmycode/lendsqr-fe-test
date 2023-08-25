@@ -8,4 +8,4 @@ import activateuser from '../../../assets/table/np_user_2995993_000000 1.svg'
 import viewuser from '../../../assets/table/np_view_1214519_000000 1.svg'
 import calender from '../../../assets/table/np_view_1214519_000000 1.svg'
 
-export { inactive, active, blacklisted, pending, more_icon,blacklistuser,activateuser,viewuser, calender}
+export  { inactive, active, blacklisted, pending, more_icon,blacklistuser,activateuser,viewuser, calender}
