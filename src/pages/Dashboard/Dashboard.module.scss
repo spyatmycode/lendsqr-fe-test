@@ -40,14 +40,14 @@
     font-weight: 500;
     line-height: normal;
     width: 100%;
-    max-width: 1037px;
+    
    
    
 }
 
 .main__content_table{
     display: flex;
-    width: 100%;
+    width: calc(100% - 138px);  
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -63,6 +63,7 @@
     position: relative;
     overflow: hidden;
     gap: 20px;
+    flex-shrink: 1;
 
 }
 
@@ -77,6 +78,8 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: calc(100%);
+    
     
 
 }
@@ -87,13 +90,14 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
+    width: calc(100%); 
 }
 
 .header{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: calc(100% - 160px);
+    width: calc(100%);
     padding: 20px 0px;
     text-align: centers;
 
@@ -101,7 +105,7 @@
 
 }
 
-@media screen and (min-width:1500px){
+@media  (min-width:1500px){
 
     .infocard__container{
         width: 100%;
@@ -129,6 +133,15 @@
        
         
         
+    }
+
+    .main__content_table{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        width: calc(100%); 
     }
 
 

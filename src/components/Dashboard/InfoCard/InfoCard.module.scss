@@ -12,6 +12,7 @@
     gap: 10px;
     padding: 20px;
     width: calc(100% - 138px);
+     flex-shrink: 1;
 
 
     :nth-child(2) {
@@ -93,7 +94,7 @@
         justify-content: center;
         gap: 10px;
         padding: 20px;
-        width: calc(100% - 138px);
+        width: calc(100%);
     
     
         :nth-child(2) {
@@ -121,7 +122,8 @@
 
 @media (min-width: 1200px) and (max-width: 1500px){
     .card{
-        width: 200px;
+        // width: 200px;
+        flex-shrink: 1;
         
     }
 }
