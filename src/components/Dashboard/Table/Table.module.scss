@@ -9,7 +9,8 @@
 .table__container {
     position: relative;
     overflow-x: auto;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    box-shadow: 3px 5px 20px 0px rgba(0, 0, 0, 0.04);
     border-radius: 0.5rem;
     width: 100%;
     max-width: 500px;
@@ -129,7 +130,7 @@
 .table__container {
     position: relative;
     overflow-x: auto;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+ box-shadow: 3px 5px 20px 0px rgba(0, 0, 0, 0.04);
     border-radius: 0.5rem;
     max-width: 100%;
     // max-width: calc(100% - 138px);
